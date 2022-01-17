@@ -1,38 +1,118 @@
-.App {
+/* COMPONENTE BUTTON*/
+
+.componentButton{
+  width: 250px;
+  height: 50px;
+  margin: 5px;
+
+  background-color: #28a4ec;
+
+  border-radius: 5px;
+  border: 1px solid transparent;
+
+  color:whitesmoke;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* COMPONENTE PERFILDECONTATO e PERFILPOST*/
+
+.perfil-de-contato {
+  display: flex;
+  width: 300px;
+  height: 50px;
+
+  flex-direction: row;
+  gap: 10px;
+  align-items: stretch;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.perfil-post {
+  display: flex;
+  width: 300px;
+  height: 50px;
+
+  flex-direction: row;
+  gap: 10px;
+  align-items: stretch;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.foto-perfil, .foto-perfil-post {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.perfil-info, .perfil-post-info {
+  align-self: center;
   display: flex;
   flex-direction: column;
+  flex-grow: 2;
+  gap: 5px;
+}
+
+.perfil-name, .perfil-post-name {
+  font-size: 20px;
+}
+
+.perfil-post-name-config {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.perfil-post-time {
+  color: rgb(167, 167, 167);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.three-dots-Post {
+  width: 20px;
+  height: 20px;
+}
+
+/* COMPONENTE POST */
+
+.container-Post {
+  width: 300px;
+  margin: 15px auto;
+  padding: 10px 25px;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+
+}
+
+.image-Post {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.interaction-line-Post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heart-interaction-comment-line-Post {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
